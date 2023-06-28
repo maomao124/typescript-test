@@ -8,7 +8,7 @@
 
 const str: string = 'hello world';
 
-function hello(str: string)
+function hello(str: string): void
 {
   console.log(str);
 }

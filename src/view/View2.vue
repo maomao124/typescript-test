@@ -12,7 +12,12 @@ interface User
   age: number,
 }
 
-function printUser(user: User)
+interface User2
+{
+  age2: number,
+}
+
+function printUser(user: User): void
 {
   console.log("user.id=" + user.id)
   console.log("user.name=" + user.name)
@@ -23,6 +28,10 @@ const user: User = {
   id: 10001,
   name: '张三',
   age: 19
+}
+
+const u2: User2 = {
+  age2: 1000
 }
 
 printUser(user);
